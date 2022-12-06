@@ -6,6 +6,8 @@
     "registry": "https://npm.pkg.github.com",
     "tag": "latest"
   },
+  "types": "dist/types/index.d.ts",
+  "main": "dist/js/index.js",
   "scripts": {
     "build:js": "babel src --out-dir dist/js --extensions \".ts,.tsx\" --source-maps inline",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
@@ -15,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
