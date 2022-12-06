@@ -26,4 +26,7 @@ Please ensure the following prerequisites are met:
   - Your `package.json` file contains the correct _scope_ for your package (`@smartive-education`)
   - The `package.json` file contains the correct registry
 
-sdfgsdfg
+# Doku
+
+Scripts zum Build:
+´npm run build´ legt einen neuen dist folder an, welcher dann deployed werden kann.
