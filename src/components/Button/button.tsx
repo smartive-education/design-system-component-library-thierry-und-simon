@@ -5,9 +5,24 @@ export enum ButtonType {
   secondary = 'secondary',
 }
 
+export enum ButtonSize {
+  medium = 'medium',
+  large = 'large',
+  nolabel = 'nolabel',
+}
+
+export enum ButtonColor {
+  violet = 'violet',
+  slate = 'slate',
+  gradiant = 'gradiant',
+}
+
 export type ButtonProps = {
   type: ButtonType;
   children: ReactNode;
+  size: ButtonSize;
+  color: ButtonColor;
+  label: string;
 };
 
 export const Button: FC<ButtonProps> = ({ color, size, label, ...props }) => {

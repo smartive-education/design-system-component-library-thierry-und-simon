@@ -9,7 +9,7 @@ export default {
     size: { control: 'select', options: ['medium', 'large', 'nolabel'] },
     color: {
       control: 'select',
-      options: ['violet', 'slate', 'gradiant'],
+      options: ['violet', 'slate', 'gradiant', 'gugus'],
     },
   },
 } as ComponentMeta<typeof Button>;
