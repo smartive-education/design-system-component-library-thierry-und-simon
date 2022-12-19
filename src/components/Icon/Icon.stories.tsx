@@ -7,17 +7,15 @@ export default {
   component: Icon,
   argTypes: {
     type: {
-      options: ["h1", "h2", "h3", "h4"],
+      options: ["SvgMumble", "SvgProfile"],
       control: { type: "select" },
     },
   },
 } as ComponentMeta<typeof Icon>;
 
-const Template: ComponentStory<typeof Icon> = (args) => (
-  <Icon {...args}>Überschrift {args.type}</Icon>
-);
+const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const IconComponent = Template.bind({});
 IconComponent.args = {
-  type: IconType.h1,
+  type: IconType.mumble,
 };
