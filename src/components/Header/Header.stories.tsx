@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof Header> = (args) => (
   <Header {...args}>Überschrift {args.type}</Header>
 );
 
-export const TypographyComponent = Template.bind({});
-TypographyComponent.args = {
+export const HeaderComponent = Template.bind({});
+HeaderComponent.args = {
   type: HeaderType.h1,
 };
