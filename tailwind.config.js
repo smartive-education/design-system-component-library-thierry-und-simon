@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require("tailwindcss/plugin");
 
-module.exports = {
+const thierrySimonMumbelConfig = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
@@ -26,7 +26,6 @@ module.exports = {
       "3xl": ["40px", "50px"],
       "4xl": ["48px", "60px"],
     },
-    extend: {},
   },
   plugins: [
     plugin(function ({ addBase, theme }) {
@@ -59,3 +58,7 @@ module.exports = {
     }),
   ],
 };
+
+module.exports = thierrySimonMumbelConfig;
+// export tailwind config as plugin to be used by other projects when isntalled as npm package
+module.exports.plugin = thierrySimonMumbelConfig;

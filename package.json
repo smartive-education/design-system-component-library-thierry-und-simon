@@ -1,5 +1,5 @@
 {
-  "name": "@smartive-education/mumble",
+  "name": "@smartive-education/thierry-simon-mumble",
   "version": "0.0.0-development",
   "publishConfig": {
     "access": "public",
@@ -9,6 +9,7 @@
   "types": "dist/types/index.d.ts",
   "main": "dist/js/index.js",
   "scripts": {
+    "install": "npm run build",
     "build:js": "babel src --out-dir dist/js --extensions \".ts,.tsx\" --source-maps inline",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "build": "npm run build:types && npm run build:js",

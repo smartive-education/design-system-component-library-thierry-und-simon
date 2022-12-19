@@ -27,6 +27,7 @@ export const Typography: FC<TypoProps> = ({ type, children }) => (
       <p>{children}</p>
     ) : null}
     <h1 className="text-slate-600">Überschrift H1</h1>
+    <h1 className="text-xs">kleiner h1</h1>
     <h2 className="text-slate-600">Überschrift H2</h2>
     <h3 className="text-slate-600">Überschrift H3</h3>
     <h4 className="text-slate-600">Überschrift H4</h4>
