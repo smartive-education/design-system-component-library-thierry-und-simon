@@ -1,10 +1,5 @@
 import React, { FC, ReactNode } from 'react';
 
-export enum ButtonType {
-  primary = 'primary',
-  secondary = 'secondary',
-}
-
 export enum ButtonSize {
   medium = 'medium',
   large = 'large',
@@ -18,7 +13,6 @@ export enum ButtonColor {
 }
 
 export type ButtonProps = {
-  type: ButtonType;
   children: ReactNode;
   size: ButtonSize;
   color: ButtonColor;

@@ -6,10 +6,10 @@ export default {
   title: 'Example/Button',
   component: Button,
   argTypes: {
-    size: { control: 'select', options: ['medium', 'large', 'nolabel'] },
+    size: { control: 'radio', options: ['medium', 'large', 'nolabel'] },
     color: {
-      control: 'select',
-      options: ['violet', 'slate', 'gradiant', 'gugus'],
+      control: 'radio',
+      options: ['violet', 'slate', 'gradiant'],
     },
   },
 } as ComponentMeta<typeof Button>;
@@ -17,12 +17,6 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => (
   <Button {...args}>Button</Button>
 );
-
-// export const ButtonComponent = Template.bind({});
-
-// ButtonComponent.args = {
-//   type: ButtonType.primary,
-// };
 
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const LargeViolet = Template.bind({});
