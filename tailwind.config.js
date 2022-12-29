@@ -7,15 +7,7 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
-    spacing: {
-      xxs: '4px',
-      xs: '8px',
-      s: '16px',
-      m: '24px',
-      l: '32px',
-      xl: '48px',
-      xxl: '64px',
-    },
+
     fontSize: {
       xs: ['14px', '14px'],
       sm: ['16px', '16px'],
@@ -26,16 +18,27 @@ module.exports = {
       '3xl': ['40px', '50px'],
       '4xl': ['48px', '60px'],
     },
-    borderRadius: {
-      md: '6px',
-      lg: '8px',
+    extend: {
+      spacing: {
+        xxs: '4px',
+        xs: '8px',
+        s: '16px',
+        m: '24px',
+        l: '32px',
+        xl: '48px',
+        xxl: '64px',
+      },
+      borderRadius: {
+        md: '6px',
+        lg: '8px',
+      },
     },
-    extend: {},
   },
   plugins: [
     require('@headlessui/tailwindcss'),
     plugin(function ({ addBase, theme }) {
       addBase({
+        html: { fontSize: '10px' },
         h1: {
           fontSize: theme('fontSize.4xl'),
           lineHeight: theme('fontSize.4xl.1'),
