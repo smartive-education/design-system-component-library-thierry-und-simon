@@ -33,13 +33,16 @@ module.exports = {
         lg: '8px',
         xl: '16px',
       },
+      borderWidth: {
+        md: '6px',
+      },
     },
   },
   plugins: [
     require('@headlessui/tailwindcss'),
     plugin(function ({ addBase, theme }) {
       addBase({
-        html: { fontSize: '10px' },
+        // html: { fontSize: '10px' },
         h1: {
           fontSize: theme('fontSize.4xl'),
           lineHeight: theme('fontSize.4xl.1'),
