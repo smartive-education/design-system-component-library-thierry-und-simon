@@ -14,9 +14,7 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args}>Button</Button>
-);
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const LargeViolet = Template.bind({});
