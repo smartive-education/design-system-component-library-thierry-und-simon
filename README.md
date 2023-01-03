@@ -37,3 +37,11 @@ Scripts zum Build:
 4. Projekt muss Tailwind installiert haben, damit die Klassen erkannt werden.
 
 [Todo:] Check ob dist Folder ins Repo soll / Check ob Tailwind Teil des Bundles sein muss?
+
+## Icons
+
+Die Icons können als SVG Files im Folder assets abgelegt werden. Mit dem command `npm run svgr` werden daraus React Components erstellt, welche in `src/Icons`abgelegt sind. Wenn neue Icons hinzugeüfgt werden, müssen die danach in der Icon Komponenten importiert und hinzugeüfgt werden.
+
+Die Icon-Komponente wird danch importiert und verwendet. Es werden zwei Props erwartet: Type (Type des Icons und color (Farbe, Standard Slate)).
+
+Um
