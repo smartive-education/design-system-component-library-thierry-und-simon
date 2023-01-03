@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
 
-module.exports = {
-  content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+const thierrySimonMumbelConfig = {
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
@@ -71,3 +71,7 @@ module.exports = {
     }),
   ],
 };
+
+module.exports = thierrySimonMumbelConfig;
+// export tailwind config as plugin to be used by other projects when isntalled as npm package
+module.exports.plugin = thierrySimonMumbelConfig;

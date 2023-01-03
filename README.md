@@ -29,4 +29,11 @@ Please ensure the following prerequisites are met:
 # Doku
 
 Scripts zum Build:
-´npm run build´ legt einen neuen dist folder an, welcher dann deployed werden kann.
+´npm run build´ legt einen neuen dist folder an, welcher dann deployed werden kann. Im Moment ist dieser mittels gitignore nicht im Repo. Damit die Components in einem neuen Repo genutzt werden können, muss man wie folgt vorgehen:
+
+1. neues Projekt anlegen
+2. npm install npm install https://github.com/smartive-education/design-system-component-library-thierry-und-simon/tree/v1.1.0 ausführen
+3. Komponenten nutzen und mit import {Button, ButtonType } from "@smartive-education/mumble"; importieren.
+4. Projekt muss Tailwind installiert haben, damit die Klassen erkannt werden.
+
+[Todo:] Check ob dist Folder ins Repo soll / Check ob Tailwind Teil des Bundles sein muss?
