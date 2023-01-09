@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import { Icon, IconType } from "../Icon/Icon";
-import { getFontColor } from "../../../utils/font";
 
 export enum IconLinkType {
   slate = "slate-400",
