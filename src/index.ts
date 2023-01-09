@@ -4,3 +4,4 @@ export * from "./components/Toggle/toggle";
 export * from "./components/User/user";
 export * from "./components/UserImage/userImage";
 export * from "./components/Icon/Icon";
+export * from "./components/InteractionButtons/interactionButton";
