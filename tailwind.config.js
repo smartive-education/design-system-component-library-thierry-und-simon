@@ -3,11 +3,11 @@ const plugin = require("tailwindcss/plugin");
 
 const thierrySimonMumbelConfig = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  safelist: ["text-2xl"],
   theme: {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
     },
-
     fontSize: {
       xs: ["14px", "14px"],
       sm: ["16px", "16px"],
