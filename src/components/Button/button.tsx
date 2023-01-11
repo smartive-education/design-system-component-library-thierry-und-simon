@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import { Icon, IconType } from '../Icon/Icon';
 
 export enum ButtonSize {
   medium = 'medium',
@@ -61,7 +62,11 @@ export const Button: FC<ButtonProps> = ({
       className={`${colorClasses} ${spacingClasses} text-sm text-center text-white border-4 border-white  transition flex items-center`}
       {...props}
     >
-      {size !== 'nolabel' && <span className='mx-auto'>{label}</span>}
+      {size == 'nolabel' ? (
+        <Icon type={IconType.mumble} color='white' />
+      ) : (
+        <span className='mx-auto'>{label}</span>
+      )}
       {children}
     </button>
   );
