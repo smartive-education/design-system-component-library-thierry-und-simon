@@ -25,3 +25,23 @@ Please ensure the following prerequisites are met:
   - When trying with `npm pack`, all your required files are included in the resulting tarball
   - Your `package.json` file contains the correct _scope_ for your package (`@smartive-education`)
   - The `package.json` file contains the correct registry
+
+# Doku
+
+Scripts zum Build:
+´npm run build´ legt einen neuen dist folder an, welcher dann deployed werden kann. Im Moment ist dieser mittels gitignore nicht im Repo. Damit die Components in einem neuen Repo genutzt werden können, muss man wie folgt vorgehen:
+
+1. neues Projekt anlegen
+2. npm install npm install https://github.com/smartive-education/design-system-component-library-thierry-und-simon/tree/v1.1.0 ausführen
+3. Komponenten nutzen und mit import {Button, ButtonType } from "@smartive-education/mumble"; importieren.
+4. Projekt muss Tailwind installiert haben, damit die Klassen erkannt werden.
+
+[Todo:] Check ob dist Folder ins Repo soll / Check ob Tailwind Teil des Bundles sein muss?
+
+## Icons
+
+Die Icons können als SVG Files im Folder assets abgelegt werden. Mit dem command `npm run svgr` werden daraus React Components erstellt, welche in `src/Icons`abgelegt sind. Wenn neue Icons hinzugeüfgt werden, müssen die danach in der Icon Komponenten importiert und hinzugeüfgt werden.
+
+Die Icon-Komponente wird danch importiert und verwendet. Es werden zwei Props erwartet: Type (Type des Icons und color (Farbe, Standard Slate)).
+
+Um

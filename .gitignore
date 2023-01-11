@@ -1,5 +1,6 @@
 # Storybook
 storybook-static/
+dist/
 
 # Logs
 logs

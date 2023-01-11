@@ -1,15 +1,51 @@
 {
-  "name": "@smartive-education/todo-insert-package-name-here",
+  "name": "@smartive-education/thierry-simon-mumble",
   "version": "0.0.0-development",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com",
     "tag": "latest"
   },
+  "types": "dist/types/index.d.ts",
+  "main": "dist/js/index.js",
   "scripts": {
-    "build": "echo 'build'",
-    "build-storybook": "echo 'build storybook'"
+    "install": "npm run build",
+    "build:js": "babel src --out-dir dist/js --extensions \".ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "build": "npm run build:types && npm run build:js",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006",
+    "svgr": "svgr -d src/Icons/ assets/"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/manager-webpack4": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "@svgr/cli": "^6.5.1",
+    "@svgr/webpack": "^6.5.1",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.3.0",
+    "postcss": "^8.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@headlessui/react": "^1.7.7",
+    "@headlessui/tailwindcss": "^0.1.2",
+    "cross-env": "^7.0.3",
+    "tsconfig-paths-webpack-plugin": "^4.0.0"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "@svgr/babel-plugin-replace-jsx-attribute-value",
+      {
+        "values": [
+          { "value": "#475569", "newValue": "props.color", "literal": true }
+        ]
+      }
+    ]
+  ]
+}
