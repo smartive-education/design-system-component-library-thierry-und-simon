@@ -14,4 +14,4 @@ const Template: ComponentStory<typeof Link> = (args) => (
   <Link {...args}>Link Label</Link>
 );
 
-export const IconLinkComponent = Template.bind({});
+export const LinkComponent = Template.bind({});
